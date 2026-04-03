@@ -1,9 +1,13 @@
 import tkinter as tk
 from controllers import ai_controller, ui_controller, video_controller
+from os.path import splitext, basename
 
 def convert():
     video_controller.extract_audio(text.get("1.0", "end"))
-    ai_controller.extract_transcript()
+    try:
+        ai_controller.generate_md_file(file_name=splitext(basename(text.get("1.0", "end")))[0])
+    except:
+        ai_controller.generate_md_file()
 
 app = tk.Tk()
 app.title("Video Summarizer App")
