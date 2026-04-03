@@ -1,0 +1,5 @@
+.idea
+*.bin
+__pycache__
+transcript.txt
+extracted.mp3
