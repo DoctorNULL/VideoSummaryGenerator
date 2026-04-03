@@ -1,3 +1,0 @@
-https://huggingface.co/Systran/faster-whisper-large-v3/resolve/main/model.bin?download=true
-
-Please put this model.bin file inside Whisper directory along with config.json, tokenizer.json and vocabulary.json
